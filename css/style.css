@@ -84,7 +84,7 @@ body {
   right: 0;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(180deg, #f3d6d1 0%, rgba(235, 235, 235, 0) 100%);
+  background: linear-gradient(180deg, #cadbeb 0%, rgba(235, 235, 235, 0) 100%);
   z-index: -2;
 }
 
@@ -172,4 +172,115 @@ body {
 
 .composition__inner--text p {
   width: 230px;
+}
+
+.case {
+  background: var(--Milk, #fafafa);
+  padding: 80px 0 100px;
+  text-align: center;
+}
+
+.case__text {
+  min-width: 825px;
+  margin: 0 auto 40px;
+}
+
+.energy__title {
+  padding-top: 160px;
+  margin-bottom: 40px;
+}
+
+.energy__num {
+  font-size: 210px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.energy__text {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.audio {
+  position: relative;
+}
+
+.audio::before {
+  content: "";
+  background-image: url(../images/audio-dj.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.audio::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/audio-sound.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 150vh;
+  z-index: -1;
+}
+
+.audio__inner {
+  min-height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.audio__box {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30vh;
+}
+.audio__text {
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  padding: 15px 58px;
+  border-radius: 30px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 250px 0 40px;
+  background: var(--Black, #000);
+  position: relative;
+  z-index: -2;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+
+.footer__text {
+  padding: 20px 0;
+}
+
+.footer__list {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 20px;
 }
